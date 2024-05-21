@@ -39,14 +39,14 @@ void constr::disp(void){
     }
 
 int main(void){
-    constr objd;
+    constr objd;    //default constructor called
     objd.disp();
-    constr objp(200,"i am para constr");
+    constr objp(200,"i am para constr");    //parameterized constructor called
     objp.disp();
-    constr objc(objd);
+    constr objc(objd);     //copy constructor called
     objc.disp();
-    constr objc1 = objp;
+    constr objc1 = objp;    //copy constructor called
     objc1.disp();
-    constr objm(move(objd));
+    constr objm(move(objd));    //move constructor called
     objm.disp();
 }
