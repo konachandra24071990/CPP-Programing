@@ -119,14 +119,14 @@ int main(void){
     obj.DispElements();
     obj.AddElement(30);
     obj.insert(40,2);
-    // obj.AddElementFront(1);
+    obj.AddElementFront(1);
     obj.ReverseList();
     obj.DispElements();
-    // obj.DeleteElement(40);
-    // obj.DispElements();
-    // obj.DeleteElement(30);
-    // obj.DispElements();
-    // obj.DeleteElementFront();
-    // obj.DispElements();
+    obj.DeleteElement(40);
+    obj.DispElements();
+    obj.DeleteElement(30);
+    obj.DispElements();
+    obj.DeleteElementFront();
+    obj.DispElements();
     return 0;
 }
